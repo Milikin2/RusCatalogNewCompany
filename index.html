@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Добавить организацию</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220808151854">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header__main header-main">
+			<div class="header-main__body">
+				<div data-da=".header-main__logo-container, 1005" class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+					</nav>
+				</div>
+				<div class="header-main__logo-container">
+					<a href="../index.html" class="header-main__link">
+						<img src="img/header__logo.svg" alt="" class="header-main__logo">
+					</a>
+				</div>
+				<div data-da=".header-main__addCompany-container, 768" class="header-main__search-container">
+					<img src="img/search__icon.svg" class="header-main__search-img" alt="">
+				</div>
+
+				<div class="header-main__data">
+					<input type="text" class="header-main__input" placeholder="Введите название компании или услуги">
+					<select data-show-selected data-search name="form[]" data-class-modif="header-main" class="header-main__select">
+						<option value="" data-class="header-main__placeholder" selected data-show>Поиск города</option>
+						<option value="1">Санкт-Петербург</option>
+						<option value="2">Уфа</option>
+						<option value="3">Ярославль</option>
+						<option value="4">Екатеринбург</option>
+					</select>
+					<button type="submit" class="header-main__button">найти</button>
+				</div>
+
+				<div class="header-main__addCompany-container">
+					<a href="../addCompany.html" class="header-main__addCompany">добавить
+						компанию</a>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__intro company-intro">
+				<div class="company-intro__container">
+					<h1 class="company-intro__title section__title">Добавить организацию
+					</h1>
+				</div>
+			</section>
+
+			<section class="page__descr descr">
+				<div data-da=".descr__container, 768" class="descr__body">
+					<div class="descr__content">
+						<div class="descr__applicationQuality-container">
+							<h3 class="descr__applicationQuality">Качество заявки
+								<span data-tippy-content__applicationQuality id="applicationQuality"></span>
+							</h3>
+						</div>
+						<ul class="descr__quality-list quality-list">
+							<li class="quality-list__item">
+								<div class="quality-list__item-block  quality-list__item-block-active">
+									Название
+								</div>
+							</li>
+							<li class="quality-list__item">
+								<div class="quality-list__item-block">Короткое описание</div>
+							</li>
+							<li class="quality-list__item">
+								<div class="quality-list__item-block">Юридическое лицо</div>
+							</li>
+							<li class="quality-list__item">
+								<div class="quality-list__item-block">Контакты</div>
+							</li>
+							<li class="quality-list__item">
+								<div class="quality-list__item-block">Сайты и соц. сети</div>
+							</li>
+							<li class="quality-list__item">
+								<div class="quality-list__item-block">Адрес и место</div>
+							</li>
+							<li class="quality-list__item">
+								<div class="quality-list__item-block">Режим работы</div>
+							</li>
+						</ul>
+					</div>
+
+					<div class="descr__data-container">
+						<h2 class="descr__title section__title">Описание</h2>
+						<ul class="descr__data data-list">
+							<li class="data-list__item">
+								<h3 class="data-list__item-title">
+									Название компании
+									<span data-tippy-content__applicationQuality id="applicationQuality"></span>
+								</h3>
+								<input placeholder="Радуга" type="text" class="data-list__item-input">
+							</li>
+							<li class="data-list__item">
+								<h3 class="data-list__item-title">
+									Короткое описание
+									<span data-tippy-content__applicationQuality id="applicationQuality"></span>
+								</h3>
+								<input placeholder="Короткое описание" type="text" class="data-list__item-input">
+							</li>
+							<li class="data-list__item">
+								<h3 class="data-list__item-title">
+									Категория
+									<span data-tippy-content__applicationQuality id="applicationQuality"></span>
+								</h3>
+								<input placeholder="Магазин детских игрушек" type="text" class="data-list__item-input">
+							</li>
+							<li class="data-list__item">
+								<h3 class="data-list__item-title">Описание компании</h3>
+								<textarea placeholder="Магазин детских игрушек" name="" id="" class="data-list__item-input" cols="30" rows="5"></textarea>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="descr__container">
+
+				</div>
+			</section>
+
+			<section class="page__entity entity">
+				<div data-da=".entity__container, 768" class="entity__body">
+					<h2 class="entity__main-title section__title">Юридическое лицо</h2>
+					<div class="entity__data">
+						<div class="entity__input-container">
+							<h3 class="entity__title">Юридическое лицо</h3>
+							<input placeholder="ООО Вектор" type="text" class="entity__input"></input>
+						</div>
+						<div class="entity__col">
+							<div class="entity__input-container">
+								<h3 class="entity__title">ИНН</h3>
+								<input data-validate-field="tel" placeholder="7702820575" type="text" class="entity__input entity__input-inn"></input>
+							</div>
+							<div class="entity__input-container">
+								<h3 class="entity__title">ОГРН</h3>
+								<input data-validate-field="tel" placeholder="113774727381" type="text" class="entity__input entity__input-ogrn"></input>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="entity__container">
+				</div>
+			</section>
+
+			<section class="page__contacts contacts">
+				<div data-da=".contacts__container, 768" class="contacts__body">
+					<h2 class="contacts__title">Контакты</h2>
+					<form action="#" class="contacts__form">
+						<div class="contacts__form-telepnone-container contacts__form-container">
+							<h4 class="contacts__form-telephone-title contacts__form-title">Телефон</h4>
+							<input placeholder="+7 999 12 34 567" type="text" data-validate-field="tel" class="contacts__form-telephone-input">
+						</div>
+						<div class="contacts__form-comment-container contacts__form-container">
+							<h4 class="contacts__form-comment-title contacts__form-title">Комментарий к номеру</h4>
+							<input placeholder="Служба поддержки" type="text" class="contacts__form-comment-input"><span class="contacts__form-comment-reset"></span>
+						</div>
+						<button type="button" class="contacts__form-telephone-add">Добавить телефон</button>
+						<ul class="contacts__form-list form-list">
+							<li class="form-list__item">
+								<h4 class="form-list__item-title contacts__form-title">Электронная почта</h4>
+								<input data-validate-field="email" placeholder="name@mail.ru" type="email" class="form-list__item-input">
+							</li>
+							<li class="form-list__item">
+								<h4 class="form-list__item-title contacts__form-title">Сайт</h4>
+								<input placeholder="https://example.com" type="text" class="form-list__item-input">
+							</li>
+							<li class="form-list__item">
+								<img src="img/new__company/vk__icon.svg" alt="" class="form-list__item-logo">
+								<h4 class="form-list__item-title contacts__form-title">Вконтакте</h4>
+								<input placeholder="https://vk.com/club123456" type="text" class="form-list__item-input">
+							</li>
+							<li class="form-list__item">
+								<img src="img/new__company/youtube__icon.svg" alt="" class="form-list__item-logo">
+								<h4 class="form-list__item-title contacts__form-title">Youtube</h4>
+								<input placeholder="https://youtube.com/channel" type="text" class="form-list__item-input">
+							</li>
+							<li class="form-list__item">
+								<img src="img/new__company/skype__icon.svg" alt="" class="form-list__item-logo">
+								<h4 class="form-list__item-title contacts__form-title">Скайп</h4>
+								<input placeholder="skype_name" type="text" class="form-list__item-input">
+							</li>
+							<li class="form-list__item">
+								<img src="img/new__company/tg__icon.svg" alt="" class="form-list__item-logo">
+								<h4 class="form-list__item-title contacts__form-title">Телеграм</h4>
+								<input placeholder="https://t.me/name" type="text" class="form-list__item-input">
+							</li>
+							<li class="form-list__item">
+								<img src="img/new__company/ws__icon.svg" alt="" class="form-list__item-logo">
+								<h4 class="form-list__item-title contacts__form-title">Whatsapp</h4>
+								<input placeholder="whatsapp_name" type="text" class="form-list__item-input">
+							</li>
+							<li class="form-list__item">
+								<img src="img/new__company/vb__icon.svg" alt="" class="form-list__item-logo">
+								<h4 class="form-list__item-title contacts__form-title">Viber</h4>
+								<input placeholder="viber_name" type="text" class="form-list__item-input">
+							</li>
+						</ul>
+					</form>
+				</div>
+				<div class="contacts__container"></div>
+			</section>
+
+			<section class="page__photoes photoes">
+				<div class="photoes__container">
+					<div class="photoes__body">
+						<h2 class="photoes__title section__title">Фотографии (до 10 шт)</h2>
+
+						<label class="photoes__input-group">
+							<img src="img/photoes__icon.svg" alt="">
+							<h4 class="photoes__input-title">Перетащите сюда или</h4>
+							<div class="photoes__input-fake">загрузить фото</div>
+							<input type="file" multiple placeholder="загрузите фото" class="photoes__input-real">
+						</label>
+					</div>
+				</div>
+			</section>
+
+			<section class="page__address address">
+				<div class="address__container">
+					<div class="address__body">
+						<div class="address__data-container">
+							<div class="address__data-col">
+								<label class="address__data-label-address">
+									<svg class="address__data-label-search" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.7778 21.5556C17.1779 21.5556 21.5556 17.1779 21.5556 11.7778C21.5556 6.37766 17.1779 2 11.7778 2C6.37766 2 2 6.37766 2 11.7778C2 17.1779 6.37766 21.5556 11.7778 21.5556Z" stroke="#EA3323" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M24.0003 24L18.6836 18.6833" stroke="#EA3323" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+
+									<h4 class="address__data-title">Адрес</h4>
+									<input placeholder="Санкт-Петербург" type="text">
+								</label>
+								<label class="address__data-label-street">
+									<h4 class="address__data-title">Улица</h4>
+									<input placeholder="ул. Риского-Корсакова" type="text">
+								</label>
+							</div>
+							<div class="address__data-col">
+								<label class="address__data-label-house">
+									<h4 class="address__data-title">Дом</h4>
+									<input placeholder="3" type="text">
+								</label>
+								<label class="address__data-label-dist">
+									<h4 class="address__data-title">Район города</h4>
+									<input placeholder="Центральный" type="text">
+								</label>
+								<label class="address__data-label-index">
+									<h4 class="address__data-title">Почтовый индекс</h4>
+									<input placeholder="220030" type="text">
+								</label>
+								<label class="address__data-label-building">
+									<h4 class="address__data-title">Название здания</h4>
+									<input placeholder="TЦ Экспобел" type="text">
+								</label>
+							</div>
+						</div>
+						<h3 class="address__map-title">Переместите метку для уточнения места</h3>
+						<div class="address__map-container">
+							<picture><source srcset="img/address__map.webp" type="image/webp"><img src="img/address__map.png" class="address__map" alt=""></picture>
+						</div>
+						<h3 class="address__textarea-title">Комментарий к адресу</h3>
+						<textarea placeholder="Магазин детских игрушек" class="address__textarea" name="" style="resize: none;" id="" cols="30" rows="10"></textarea>
+					</div>
+				</div>
+			</section>
+
+			<section class="page__shedule shedule">
+				<div class="shedule__container">
+					<div class="shedule__body">
+						<h2 class="shedule__title section__title">Режим работы</h2>
+						<label class="shedule__label">
+							<input checked type="checkbox" class="shedule__input-real">
+							<div class="shedule__input-fake"></div>
+							<h4 class="shedule__day">Пн</h4>
+							<div class="shedule__time-container">
+								<input class="shedule__time" placeholder="с 09:00 до 18:00" type="text">
+								<input class="shedule__break" placeholder="Перерыв с 13:00 до 14:00" type="text">
+							</div>
+						</label>
+						<label class="shedule__label">
+							<input checked type="checkbox" class="shedule__input-real">
+							<div class="shedule__input-fake"></div>
+							<h4 class="shedule__day">Вт</h4>
+							<div class="shedule__time-container">
+								<input class="shedule__time" placeholder="с 09:00 до 18:00" type="text">
+								<input class="shedule__break" placeholder="Перерыв с 13:00 до 14:00" type="text">
+							</div>
+						</label>
+						<label class="shedule__label">
+							<input checked type="checkbox" class="shedule__input-real">
+							<div class="shedule__input-fake"></div>
+							<h4 class="shedule__day">Ср</h4>
+							<div class="shedule__time-container">
+								<input class="shedule__time" placeholder="с 09:00 до 18:00" type="text">
+								<input class="shedule__break" placeholder="Перерыв с 13:00 до 14:00" type="text">
+							</div>
+						</label>
+						<label class="shedule__label">
+							<input checked type="checkbox" class="shedule__input-real">
+							<div class="shedule__input-fake"></div>
+							<h4 class="shedule__day">Чт</h4>
+							<div class="shedule__time-container">
+								<input class="shedule__time" placeholder="с 09:00 до 18:00" type="text">
+								<input class="shedule__break" placeholder="Перерыв с 13:00 до 14:00" type="text">
+							</div>
+						</label>
+						<label class="shedule__label">
+							<input checked type="checkbox" class="shedule__input-real">
+							<div class="shedule__input-fake"></div>
+							<h4 class="shedule__day">Пт</h4>
+							<div class="shedule__time-container">
+								<input class="shedule__time" placeholder="с 09:00 до 18:00" type="text">
+								<input class="shedule__break" placeholder="Перерыв с 13:00 до 14:00" type="text">
+							</div>
+						</label>
+						<label class="shedule__label">
+							<input type="checkbox" class="shedule__input-real">
+							<div class="shedule__input-fake"></div>
+							<h4 class="shedule__day">Сб</h4>
+							<h3 class="shedule__holidays">Выходной</h3>
+						</label>
+						<label class="shedule__label">
+							<input type="checkbox" class="shedule__input-real">
+							<div class="shedule__input-fake"></div>
+							<h4 class="shedule__day">Вс</h4>
+							<h3 class="shedule__holidays">Выходной</h3>
+						</label>
+
+
+					</div>
+				</div>
+			</section>
+
+			<section class="page__sender sender">
+				<div class="sender__container">
+					<div class="sender__body">
+						<h2 class="sender__main-title section__title">Контакты отправителя</h2>
+						<form action="" method="POST">
+							<div class="sender__info-container">
+								<label class="sender__info-label">
+									<h4 class="sender__info-title sender__title">Имя отправителя</h4>
+									<input type="text" placeholder="Алексей" class="sender__info-input">
+								</label>
+								<label class="sender__info-label">
+									<h4 class="sender__info-title sender__title">Электронная почта отправителя</h4>
+									<input type="text" placeholder="name@mail.ru" class="sender__info-input">
+								</label>
+							</div>
+							<div class="sender__comment-container">
+								<label class="sender__comment-label">
+									<h4 class="sender__comment-title sender__title">Комментарий для модератора</h4>
+									<input type="text" class="sender__comment-input">
+								</label>
+							</div>
+							<label class="sender__checkbox-container">
+								<input type="checkbox" checked class="sender__checkbox-real">
+								<div class="sender__checkbox-fake"></div>
+								<p class="sender__descr">
+									Согласен с правилами сайта и <a href="convention.html">обработкой персональных
+										данных
+										»</a>
+								</p>
+							</label>
+
+							<button type="submit" class="sender__submit">отправить на модерацию</button>
+						</form>
+					</div>
+				</div>
+				<a href="#" class="back"></a>
+			</section>
+			<footer class="footer">
+				<div class="footer__container">
+					<div class="footer__body">
+						<div class="footer__content content-footer">
+							<div class="content-footer__column">
+								<h3 class="content-footer__title">Документы</h3>
+								<ul class="content-footer__list">
+									<li class="content-footer__item">
+										<a href="#" class="content-footer__link">Политика конфиденциальности</a>
+									</li>
+									<li class="content-footer__item">
+										<a href="#" class="content-footer__link">Отказ от отвественности</a>
+									</li>
+									<li class="content-footer__item">
+										<a href="../convention.html" class="content-footer__link">Обработка персональных данных</a>
+									</li>
+									<li class="content-footer__item">
+										<a href="#" class="content-footer__link">Правила написания отзывов</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="content-footer__column">
+								<h3 class="content-footer__title">Компании</h3>
+								<ul class="content-footer__list">
+									<li class="content-footer__item">
+										<a href="#" class="content-footer__link">Каталог компаний</a>
+									</li>
+									<li class="content-footer__item">
+										<a href="#" class="content-footer__link">Отзывы</a>
+									</li>
+									<li class="content-footer__item">
+										<a href="#" class="content-footer__link">Обратная связь</a>
+									</li>
+									<li class="content-footer__item">
+										<a href="#" class="content-footer__link">О проекте</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+
+
+						<a class="footer__addCompany" href="../addCompany.html">Добавить компанию
+						</a>
+						<div class="footer__descr-container">
+							<a href="../index.html" class="footer__link"><img class="footer__logo" src="img/footer__logo.svg" alt=""></a>
+							<div class="footer__copyright">
+								&copy;RusCatalog.org,
+								<script>
+									document.write("2017-" + new Date().getFullYear())
+								</script>
+							</div>
+							<div class="footer__descr">РусКаталог — это удобный каталог организаций в вашем городе. Ищите
+								компании
+								или услуги на карте рядом с вами.
+								На странице компании представлены режим работы, телефон, адрес, отзывы посетителей
+								и местоположение
+								на карте.</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+		</main>
+	</div>
+	<script src="js/app.min.js?_v=20220808151854"></script>
+</body>
+
+</html>
